@@ -28,7 +28,8 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+               "./node_modules/bootstrap/dist/css/bootstrap.min.css"
             ],
             "scripts": []
           },
@@ -123,6 +124,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "UItypescript"
+    }
+  },
+  "defaultProject": "UItypescript",
+  "cli": {
+    "analytics": "609052a8-3733-4306-8f62-cef928bf90be"
+  }
 }

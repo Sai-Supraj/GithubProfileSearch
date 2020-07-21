@@ -1,0 +1,32 @@
+
+<div class = "container">
+<form action=""  (ngsubmit)="onsearch()">
+    <div class = "form-row">
+       <div class= "from-group col-md-6">
+           <label for="query">Query</label>
+           <input type="text" class="form-control"  name="title" [(ngModel)]="title"
+           id="query" placeholder="Enter the User Name"/>
+       </div>
+    </div>
+
+    <div class="form-row">
+        <div class="form-group col">
+          <button
+            class="btn btn-primary"
+            (click)="onsearch()"
+            type="submit">
+            Search
+          </button>
+        </div>
+      </div>
+</form>
+<div class = "panel-body" *ngFor="let user of userData?.items">
+    <p>
+        {{user.login}}
+    </p>
+</div>
+
+
+
+</div>
+
