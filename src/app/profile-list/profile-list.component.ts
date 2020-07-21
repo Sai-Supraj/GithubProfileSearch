@@ -23,6 +23,14 @@ export class ProfileListComponent implements OnInit {
       this.userData = result; })
 
   }
+  onsort(){
+      
+     
+    this.search.getSortUser(this.title).subscribe((result:any) => {
+      this.userData = result; })
+
+
+  }
   
   ngOnInit(): void {
   }

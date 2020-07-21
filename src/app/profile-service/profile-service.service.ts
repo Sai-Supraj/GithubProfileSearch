@@ -9,7 +9,13 @@ export class ProfileServiceService {
      
    getUsers(user :string ){
          
-        return this.http.get("https://api.github.com/search/users?q="+ user+'&sort=score&direction=asc');
+        return this.http.get("https://api.github.com/search/users?q="+ user);
+
+   }
+   getSortUser(user:string ){
+ 
+
+    return this.http.get("https://api.github.com/search/users?q="+ user+'&sort=score&direction=asc');
 
    }
   

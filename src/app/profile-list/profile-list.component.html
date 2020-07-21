@@ -2,20 +2,25 @@
 <div class = "container">
 <form action=""  (ngsubmit)="onsearch()">
     <div class = "form-row">
-       <div class= "from-group col-md-6">
+       <div class= "from-group col-md-8">
            <label for="query">Query</label>
            <input type="text" class="form-control"  name="title" [(ngModel)]="title"
            id="query" placeholder="Enter the User Name"/>
        </div>
     </div>
-
     <div class="form-row">
         <div class="form-group col">
           <button
             class="btn btn-primary"
             (click)="onsearch()"
             type="submit">
-            Search
+            Search</button>
+        </div>
+        <div class="form-group col">
+          <button
+            class="btn btn-primary"
+            (click)="onsort()">
+            Sort
           </button>
         </div>
       </div>
