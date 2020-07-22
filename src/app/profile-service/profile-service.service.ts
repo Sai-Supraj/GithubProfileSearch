@@ -18,7 +18,22 @@ export class ProfileServiceService {
     return this.http.get("https://api.github.com/search/users?q="+ user+'&sort=score&direction=asc');
 
    }
+   getSortUser1(user:string ){
+ 
+
+    return this.http.get("https://api.github.com/search/users?q="+ user+'&sort=score&direction=desc');
+
+   }
   
-    
+    getUsername(username : string){
+       
+        return this.http.get("https://api.github.com/users/"+username);
+
+    }
+    getnextpage(user :string ,counter : any){
+        
+        return this.http.get("https://api.github.com/search/users?q="+ user+"&page=" +counter);
+
+    }
 
 }

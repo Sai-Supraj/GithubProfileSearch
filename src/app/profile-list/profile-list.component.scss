@@ -4,3 +4,9 @@
     min-width: 0;
     max-width: 20%;
 }
+.form-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -5px;
+    margin-left: -5px;
+}
